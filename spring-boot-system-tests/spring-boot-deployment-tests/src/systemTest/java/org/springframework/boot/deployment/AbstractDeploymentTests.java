@@ -51,6 +51,7 @@ abstract class AbstractDeploymentTests {
 			ResponseEntity<String> response = rest.getForEntity("/", String.class);
 			assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
 			assertThat(response.getBody()).isEqualTo("Hello World");
+			System.out.print("Hello World");
 		});
 	}
 
